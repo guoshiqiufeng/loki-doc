@@ -10,11 +10,11 @@ actions:
     link: /guide/
     type: secondary
 features:
-  - title: 简化开发
-    details: 通过简化开发流程，提高开发效率。
-  - title: 统一规范
-    details: 一次开发适配多种MQ消息。
-  - title: 快速集成
-    details: 基于Spring Boot 快速集成。
+  - title: Streamline development
+    details: Improve development efficiency by streamlining the development process.
+  - title: Standardize
+    details: Adapt multiple MQ messages in one development.
+  - title: Rapid Integration
+    details: Fast integration based on Spring Boot.
 footer: Apache License 2.0 | Copyright © 2023-present fubluesky
 ---
