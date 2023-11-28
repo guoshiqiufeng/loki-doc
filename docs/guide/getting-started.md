@@ -1,6 +1,6 @@
 ---
-lang: en
-title: getting-started
-description: getting-started
+lang: zh-cn
+title: 快速上手
+description: 
 ---
-# getting-started
+# 快速上手

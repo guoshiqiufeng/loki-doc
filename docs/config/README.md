@@ -1,7 +1,6 @@
 ---
 lang: en
-title: config
+title: 配置
 description: config
 ---
-## config
-README.md
+# 配置
