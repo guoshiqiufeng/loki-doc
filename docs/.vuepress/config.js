@@ -39,7 +39,8 @@ export default defineUserConfig({
                             text: '指南',
                             children: [
                                 '/guide/',
-                                '/guide/getting-started'
+                                '/guide/getting-started',
+                                '/guide/install'
                             ]
                         }
                     ],
@@ -81,6 +82,7 @@ export default defineUserConfig({
                             children: [
                                 '/en/guide/',
                                 '/en/guide/getting-started',
+                                '/en/guide/install'
                             ]
                         }
                     ],

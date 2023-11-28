@@ -4,7 +4,7 @@ home: true
 title: 首页
 #heroImage: /images/logo.png
 actions:
-  - text: 快速上手
+  - text: 快速开始
     link: /guide/getting-started.html
     type: primary
   - text: 项目简介

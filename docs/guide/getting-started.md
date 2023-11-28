@@ -1,6 +1,7 @@
 ---
 lang: zh-cn
-title: 快速上手
+title: 快速开始
 description: 
 ---
-# 快速上手
+# 快速开始
+
