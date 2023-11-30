@@ -6,7 +6,7 @@ description: getting-started
 # getting-started
 Let's go through a simple demo to introduce how to use LOKI's features.
 
-## initialization
+## Initialization
 Create an empty Spring Boot project (2.x, 3.x are both supported) Here we are using version 3.2.0.
 
 ## Adding Dependencies
@@ -117,5 +117,5 @@ public class TestController {
 ```
 
 Full code example View [loki-test](https://github.com/guoshiqiufeng/loki-test)
-## 小结
+## Wrap-up
 With these few simple steps, we have implemented the sending and consuming of TestEntity.
