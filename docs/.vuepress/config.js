@@ -33,7 +33,9 @@ export default defineUserConfig({
                 selectLanguageName: '简体中文',
                 ariaLabel: '选择语言',
                 editLinkText: '在 GitHub 上编辑此页',
-                lastUpdated: '上次更新',
+                lastUpdated: true,
+                lastUpdatedText: '上次更新',
+                contributors: false,
                 sidebar: {
                     "/guide/": [
                         {
@@ -75,7 +77,9 @@ export default defineUserConfig({
                 selectLanguageName: 'English',
                 ariaLabel: 'Select language',
                 editLinkText: 'Edit this page on GitHub',
-                lastUpdated: 'Last Updated',
+                lastUpdated: true,
+                lastUpdatedText: 'Last Updated',
+                contributors: false,
                 sidebar: {
                     "/en/guide/": [
                         {

@@ -1,9 +1,9 @@
 ---
 lang: en
-title: getting-started
-description: getting-started
+title: Getting-started
+description: Getting-started
 ---
-# getting-started
+# Getting-started
 Let's go through a simple demo to introduce how to use LOKI's features.
 
 ## Initialization

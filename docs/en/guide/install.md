@@ -1,6 +1,6 @@
 ---
 lang: en
-title: install
+title: Install
 description: 
 ---
 # Install

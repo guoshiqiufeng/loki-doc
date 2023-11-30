@@ -1,7 +1,7 @@
 ---
 lang: en
-title: guide
-description: guide
+title: Guide
+description: Guide
 ---
 # Guide
 
