@@ -20,7 +20,8 @@ export default defineUserConfig({
         }
     },
     head: [
-        ['link', {rel: 'icon', href: '/images/f.png'}],
+        ['link', {rel: 'icon', href: '/loki-doc/images/f.ico'}],
+        ['link', {rel: 'shortcut icon', href: '/loki-doc/images/f.ico'}]
     ],
     theme: defaultTheme({
         logo: "/images/logo.png",
