@@ -43,7 +43,8 @@ export default defineUserConfig({
                             children: [
                                 '/guide/',
                                 '/guide/getting-started',
-                                '/guide/install'
+                                '/guide/install',
+                                '/guide/config',
                             ]
                         }
                     ],
@@ -87,7 +88,8 @@ export default defineUserConfig({
                             children: [
                                 '/en/guide/',
                                 '/en/guide/getting-started',
-                                '/en/guide/install'
+                                '/en/guide/install',
+                                '/en/guide/config',
                             ]
                         }
                     ],
