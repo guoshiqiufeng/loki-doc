@@ -1,6 +1,6 @@
 ---
-lang: zh-cn
-title: 配置
+lang: en
+title: Configure
 description: 
 ---
 

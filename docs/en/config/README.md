@@ -1,7 +1,6 @@
 ---
 lang: en
-title: config
-description: config
+title: Configure
+description: 
 ---
-## config
-README.md
+# Configure
