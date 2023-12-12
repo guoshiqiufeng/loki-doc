@@ -74,7 +74,7 @@ public interface TestMapper extends BaseMapper<TestEntity> {
 
 ```java
 @Component
-public class TestListener implements MessageListener<TestEntity> {
+public class TestListener implements Listener<TestEntity> {
     @Override
     public void onMessage(MessageContent<TestEntity> entity) {
         log.debug("entity:{}", entity);

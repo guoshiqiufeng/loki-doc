@@ -74,7 +74,7 @@ Write the Listener class `TestListener.java`
 
 ```java
 @Component
-public class TestListener implements MessageListener<TestEntity> {
+public class TestListener implements Listener<TestEntity> {
     @Override
     public void onMessage(MessageContent<TestEntity> entity) {
         log.debug("entity:{}", entity);
