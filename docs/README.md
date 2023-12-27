@@ -18,6 +18,9 @@ footer: Apache License 2.0 | Copyright © 2023-present fubluesky
 ---
 
 ### 最新版本
+<div style="text-align: center;">
 
 [![Maven central](https://img.shields.io/maven-central/v/io.github.guoshiqiufeng/loki.svg?style=flat-square)](https://search.maven.org/search?q=g:io.github.guoshiqiufeng%20AND%20a:loki)
 [![GitHub release](https://img.shields.io/github/release/guoshiqiufeng/loki.svg)](https://github.com/guoshiqiufeng/loki)
+
+</div>
