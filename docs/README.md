@@ -7,9 +7,6 @@ actions:
   - text: 快速开始
     link: /guide/getting-started.html
     type: primary
-  - text: 项目简介
-    link: /guide/
-    type: secondary
 features:
   - title: 简化开发
     details: 通过简化开发流程，提高开发效率。
@@ -19,3 +16,8 @@ features:
     details: 基于Spring Boot 快速集成。
 footer: Apache License 2.0 | Copyright © 2023-present fubluesky
 ---
+
+### 最新版本
+
+[![Maven central](https://img.shields.io/maven-central/v/io.github.guoshiqiufeng/loki.svg?style=flat-square)](https://search.maven.org/search?q=g:io.github.guoshiqiufeng%20AND%20a:loki)
+[![GitHub release](https://img.shields.io/github/release/guoshiqiufeng/loki.svg)](https://github.com/guoshiqiufeng/loki)

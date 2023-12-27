@@ -25,7 +25,7 @@ Add the configuration to application.yml:
 loki:
   global-config:
     mq-config:
-      mq-type: ROCKET_MQ
+      mq-type: rocket_mq
       address: 127.0.0.1:8081
       auth: false
       username: un

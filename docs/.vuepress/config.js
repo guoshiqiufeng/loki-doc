@@ -49,24 +49,24 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    "/config/": [
-                        {
-                            text: '配置',
-                            children: [
-                                '/config/',
-                            ]
-                        }
-                    ]
+                    // "/config/": [
+                    //     {
+                    //         text: '配置',
+                    //         children: [
+                    //             '/config/',
+                    //         ]
+                    //     }
+                    // ]
                 },
                 navbar: [
                     {
                         text: '指南',
                         link: '/guide/',
                     },
-                    {
-                        text: '配置',
-                        link: '/config/',
-                    },
+                    // {
+                    //     text: '配置',
+                    //     link: '/config/',
+                    // },
                     {
                         text: '更新日志',
                         link: 'https://github.com/guoshiqiufeng/loki/releases',
@@ -95,24 +95,24 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    "/en/config/": [
-                        {
-                            text: 'Config',
-                            children: [
-                                '/en/config/',
-                            ]
-                        }
-                    ],
+                    // "/en/config/": [
+                    //     {
+                    //         text: 'Config',
+                    //         children: [
+                    //             '/en/config/',
+                    //         ]
+                    //     }
+                    // ],
                 },
                 navbar: [
                     {
                         text: 'Guide',
                         link: '/en/guide/',
                     },
-                    {
-                        text: 'Config',
-                        link: '/en/config/',
-                    },
+                    // {
+                    //     text: 'Config',
+                    //     link: '/en/config/',
+                    // },
                     {
                         text: 'Changelog',
                         link: 'https://github.com/guoshiqiufeng/loki/releases',

@@ -16,6 +16,8 @@ description: Guide
 ## Supported MQ Message Middleware
 
 - RocketMq 5.x
+- Kafka 3.x
+- Redis 6.x
 
 ## Code hosting
 

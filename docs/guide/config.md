@@ -10,7 +10,7 @@ description:
 > 请确保您已经安装了 LOKI，如果您尚未安装，请查看 [安装](install.md)。
 
 
-## SpringBoot 2.x/3.x
+## RocketMQ
 
 
 ### 配置 `LokiMapperScan` 注解
@@ -33,7 +33,7 @@ public class LokiTestApplication {
 loki:
   global-config:
     mq-config:
-      mq-type: ROCKET_MQ
+      mq-type: rocket_mq
       address: 127.0.0.1:8081
       auth: false
       username: un
@@ -42,5 +42,71 @@ loki:
 ```
 
 通常来说，一般的简单工程，通过以上配置即可正常使用 [LOKI](https://github.com/guoshiqiufeng/loki)，具体可参考以下项目：
-[loki-test](https://github.com/guoshiqiufeng/loki-test)。
+[loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-rocketmq-test)。
 
+## Kafka 
+
+
+### 配置 `LokiMapperScan` 注解
+
+```java
+@LokiMapperScan
+@SpringBootApplication
+public class LokiTestApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LokiTestApplication.class, args);
+    }
+
+}
+```
+
+### `application.yml` 配置 `mq` 连接参数
+
+```yaml
+loki:
+  global-config:
+    mq-config:
+      mq-type: kafka
+      address: 127.0.0.1:9092 
+```
+
+通常来说，一般的简单工程，通过以上配置即可正常使用 [LOKI](https://github.com/guoshiqiufeng/loki)，具体可参考以下项目：
+[loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-kafka-test)。
+
+
+## Redis 
+
+
+### 配置 `LokiMapperScan` 注解
+
+```java
+@LokiMapperScan
+@SpringBootApplication
+public class LokiTestApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LokiTestApplication.class, args);
+    }
+
+}
+```
+
+### `application.yml` 配置 `mq` 连接参数
+> 支持redis单机版、集群、哨兵模式
+
+```yaml
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 12
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis 
+```
+
+通常来说，一般的简单工程，通过以上配置即可正常使用 [LOKI](https://github.com/guoshiqiufeng/loki)，具体可参考以下项目：
+[loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-redis-test)。
