@@ -95,7 +95,10 @@ public class LokiTestApplication {
 ### `application.yml` 配置 `mq` 连接参数
 > 支持redis单机版、集群、哨兵模式
 
-```yaml
+<CodeGroup>
+  <CodeGroupItem title="单机版" active>
+
+```yaml:no-line-numbers
 spring:
   data:
     redis:
@@ -107,6 +110,51 @@ loki:
     mq-config:
       mq-type: redis 
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="集群">
+
+```yaml:no-line-numbers
+spring:
+  data:
+    redis:
+      cluster:
+        nodes: 
+        - 192.168.1.10:6380
+        - 192.168.1.11:6380
+        - 192.168.1.12:6380
+      password: 123456
+      database: 12
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis 
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="哨兵">
+
+```yaml:no-line-numbers
+spring:
+  data:
+    redis:
+      sentinel:
+        master: mymaster
+        nodes:
+          - 192.168.1.10:26380
+          - 192.168.1.11:26380
+          - 192.168.1.12:26380
+        password: 123456
+      password: 123456
+      database: 12
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis 
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 通常来说，一般的简单工程，通过以上配置即可正常使用 [LOKI](https://github.com/guoshiqiufeng/loki)，具体可参考以下项目：
 [loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-redis-test)。

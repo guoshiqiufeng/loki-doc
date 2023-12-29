@@ -94,8 +94,12 @@ public class LokiTestApplication {
 ```
 
 ### `application.yml` Configure `mq` connection parameters
-> 支持redis单机版、集群、哨兵模式
-```yaml
+> Support Redis Standalone, Cluster, and Sentinel modes
+
+<CodeGroup>
+  <CodeGroupItem title="Standalone" active>
+
+```yaml:no-line-numbers
 spring:
   data:
     redis:
@@ -107,6 +111,51 @@ loki:
     mq-config:
       mq-type: redis 
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Cluster">
+
+```yaml:no-line-numbers
+spring:
+  data:
+    redis:
+      cluster:
+        nodes: 
+        - 192.168.1.10:6380
+        - 192.168.1.11:6380
+        - 192.168.1.12:6380
+      password: 123456
+      database: 12
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis 
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="Sentinel">
+
+```yaml:no-line-numbers
+spring:
+  data:
+    redis:
+      sentinel:
+        master: mymaster
+        nodes:
+          - 192.168.1.10:26380
+          - 192.168.1.11:26380
+          - 192.168.1.12:26380
+        password: 123456
+      password: 123456
+      database: 12
+loki:
+  global-config:
+    mq-config:
+      mq-type: redis 
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 Generally speaking, a general simple project can be used normally with the above
 configuration [LOKI](https://github.com/guoshiqiufeng/loki), please refer to the following project:

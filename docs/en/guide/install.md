@@ -12,74 +12,133 @@ description:
 
 ### All-dependent installation
 > All-dependent inclusion RocketMQ、Kafka、Redis
-#### Maven
 
-```xml
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>latest-version</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
-#### Gradle
+  </CodeGroupItem>
 
-```groovy
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:latest-version'
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.4.0'
 ```
 
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.4.0'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ### RocketMQ dependency installation
 
-#### Maven
 
-```xml
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-rocketmq</artifactId>
-    <version>latest-version</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
-#### Gradle
+  </CodeGroupItem>
 
-```groovy
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:latest-version'
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.4.0'
 ```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.4.0'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 
 ### Kafka dependency installation
 
-#### Maven
 
-```xml
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-kafka</artifactId>
-    <version>latest-version</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
-#### Gradle
+  </CodeGroupItem>
 
-```groovy
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:latest-version'
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.4.0'
 ```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.4.0'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ### Redis dependency installation
 
-#### Maven
 
-```xml
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-redis</artifactId>
-    <version>latest-version</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
-#### Gradle
+  </CodeGroupItem>
 
-```groovy
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:latest-version'
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.4.0'
 ```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.4.0'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
