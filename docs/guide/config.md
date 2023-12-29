@@ -94,6 +94,7 @@ public class LokiTestApplication {
 
 ### `application.yml` 配置 `mq` 连接参数
 > 支持redis单机版、集群、哨兵模式
+> mq-config 下的配置会覆盖spring.data.redis下配置
 
 <CodeGroup>
   <CodeGroupItem title="单机版" active>
@@ -109,6 +110,9 @@ loki:
   global-config:
     mq-config:
       mq-type: redis 
+      address: 127.0.0.1:6379
+      auth: true
+      password: 123456
 ```
 
   </CodeGroupItem>
@@ -120,15 +124,18 @@ spring:
     redis:
       cluster:
         nodes: 
-        - 192.168.1.10:6380
-        - 192.168.1.11:6380
-        - 192.168.1.12:6380
+        - 127.0.0.1:6380
+        - 127.0.0.1:6379
+        - 127.0.0.1:6381
       password: 123456
       database: 12
 loki:
   global-config:
     mq-config:
       mq-type: redis 
+      address: 127.0.0.1:6380,127.0.0.1:6379,127.0.0.1:6381
+      auth: true
+      password: 123456
 ```
 
   </CodeGroupItem>
@@ -141,9 +148,9 @@ spring:
       sentinel:
         master: mymaster
         nodes:
-          - 192.168.1.10:26380
-          - 192.168.1.11:26380
-          - 192.168.1.12:26380
+          - 127.0.0.1:26380
+          - 127.0.0.1:26379
+          - 127.0.0.1:26381
         password: 123456
       password: 123456
       database: 12
@@ -151,6 +158,9 @@ loki:
   global-config:
     mq-config:
       mq-type: redis 
+      address: mymaster,127.0.0.1:26380,127.0.0.1:26379,127.0.0.1:26381
+      auth: true
+      password: 123456
 ```
 
   </CodeGroupItem>
