@@ -45,6 +45,8 @@ export default defineUserConfig({
                                 '/guide/getting-started',
                                 '/guide/install',
                                 '/guide/config',
+                                '/guide/send',
+                                '/guide/listener',
                                 '/guide/annotation',
                             ]
                         }
@@ -91,6 +93,8 @@ export default defineUserConfig({
                                 '/en/guide/getting-started',
                                 '/en/guide/install',
                                 '/en/guide/config',
+                                '/en/guide/send',
+                                '/en/guide/listener',
                                 '/en/guide/annotation',
                             ]
                         }
