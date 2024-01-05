@@ -20,7 +20,7 @@ description:
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
 </dependency>
 ```
 
@@ -29,7 +29,7 @@ description:
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.4.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.4.2'
 ```
 
   </CodeGroupItem>
@@ -37,7 +37,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.4.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.4.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.4.2'
 ```
 
   </CodeGroupItem>
@@ -53,7 +53,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-rocketmq</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
 </dependency>
 ```
 
@@ -62,7 +62,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.4.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.4.2'
 ```
 
   </CodeGroupItem>
@@ -70,7 +70,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.4.1
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.4.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.4.2'
 ```
 
   </CodeGroupItem>
@@ -87,7 +87,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-kafka</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
 </dependency>
 ```
 
@@ -96,7 +96,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.4.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.4.2'
 ```
 
   </CodeGroupItem>
@@ -104,7 +104,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.4.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.4.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.4.2'
 ```
 
   </CodeGroupItem>
@@ -120,7 +120,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-redis</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
 </dependency>
 ```
 
@@ -129,7 +129,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.4.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.4.2'
 ```
 
   </CodeGroupItem>
@@ -137,7 +137,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.4.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.4.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.4.2'
 ```
 
   </CodeGroupItem>

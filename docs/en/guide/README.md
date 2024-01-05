@@ -19,6 +19,14 @@ description: Guide
 - Kafka 3.x
 - Redis 6.x
 
+### 功能
+
+| 中间件        | Send              | Listener  |
+|-----------|-------------------|-----------|
+| RocketMQ    | Normal message、Delay Message、Ordered Message | push      |
+| Kafka | Normal message              | poll      |
+| Redis      | publish           | subscribe |
+
 ## Code hosting
 
 > **[GitHub](https://github.com/guoshiqiufeng/loki)**

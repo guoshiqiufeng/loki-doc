@@ -19,6 +19,14 @@ description:
 - Kafka 3.x
 - Redis 6.x
 
+### 功能
+
+| 中间件        | 发送                | 接收        |
+|-----------|-------------------|-----------|
+| RocketMQ    | 普通消息、定时/延时消息、顺序消息 | push      |
+| Kafka | 普通消息              | poll      |
+| Redis      | publish           | subscribe |
+
 ## 代码托管
 
 > **[GitHub](https://github.com/guoshiqiufeng/loki)**
