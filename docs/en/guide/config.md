@@ -63,8 +63,18 @@ public class LokiTestApplication {
 ```
 
 ### `application.yml` Configure `mq` connection parameters
-
+> Supports all configurations under `spring.kafka`
 ```yaml
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      auto:
+        offset:
+          reset: earliest
+      auto-commit-interval: 1000
+      enable-auto-commit: true
+      
 loki:
   global-config:
     mq-config:
@@ -95,7 +105,8 @@ public class LokiTestApplication {
 
 ### `application.yml` Configure `mq` connection parameters
 > Support Redis Standalone, Cluster, and Sentinel modes
-> Configurations under mq-config will cover configurations under  spring.data.redis
+> Support all configurations under `spring.data.redis`
+> The configuration under mq-config will overwrite the configuration under `spring.data.redis`
 
 <CodeGroup>
   <CodeGroupItem title="Standalone" active>

@@ -62,8 +62,18 @@ public class LokiTestApplication {
 ```
 
 ### `application.yml` 配置 `mq` 连接参数
-
+> 支持`spring.kafka`下的所有配置 
 ```yaml
+spring:
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      auto:
+        offset:
+          reset: earliest
+      auto-commit-interval: 1000
+      enable-auto-commit: true
+
 loki:
   global-config:
     mq-config:
@@ -94,7 +104,8 @@ public class LokiTestApplication {
 
 ### `application.yml` 配置 `mq` 连接参数
 > 支持redis单机版、集群、哨兵模式
-> mq-config 下的配置会覆盖spring.data.redis下配置
+> 支持`spring.data.redis`下的所有配置
+> mq-config 下的配置会覆盖`spring.data.redis`下配置
 
 <CodeGroup>
   <CodeGroupItem title="单机版" active>
