@@ -49,10 +49,11 @@ Annotation class package：<br/>
 ## [@MessageListener](https://github.com/guoshiqiufeng/loki/blob/master/loki-annotation/src/main/java/io/github/guoshiqiufeng/loki/annotation/MessageListener.java)
 - Description: Message receiving annotation
 
-| Attributes | Type | Required | Default                | Description                       |
-|----|----|----------|------------------------|-----------------------------------| 
-|  topic   |  String  | YES      | none                   | Topic name                        |
-|  tag   |  String  | NO        | ""                     | TAG                               |
-|  consumerGroup   |  String  | NO        | "defaultConsumerGroup" | Consumer group                    |
-|  consumptionThreadCount   |  int  | NO        | 20                     | Number of threads consumed        |
-|  maxCacheMessageCount   |  int  | NO        | 1024                   | Maximum number of cached messages |
+| Attributes | Type | Required | Default                | Description                                                 |
+|----|----|----------|------------------------|-------------------------------------------------------------| 
+|  topic   |  String  | NO      | none                   | Topic name  Both topicPattern must have a value, topicPattern has higher precedence）                                                |
+|  topicPattern   |  String  | NO      | none                      | Topic Pattern name （Both topicPattern must have a value, topicPattern has higher precedence） |
+|  tag   |  String  | NO        | ""                     | TAG                                                         |
+|  consumerGroup   |  String  | NO        | "defaultConsumerGroup" | Consumer group                                              |
+|  consumptionThreadCount   |  int  | NO        | 20                     | Number of threads consumed                                  |
+|  maxCacheMessageCount   |  int  | NO        | 1024                   | Maximum number of cached messages                           |

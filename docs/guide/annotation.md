@@ -49,10 +49,11 @@ description:
 ## [@MessageListener](https://github.com/guoshiqiufeng/loki/blob/master/loki-annotation/src/main/java/io/github/guoshiqiufeng/loki/annotation/MessageListener.java)
 - 描述: 消息接收注解
 
-| Attributes | Type | Required | Default | Description    |
-|----|----|----------|------------------------|----------------| 
-|  topic   |  String  | 是      | 无                      | topic名称        |
-|  tag   |  String  | 否        | ""                     | 标签             |
-|  consumerGroup   |  String  | 否    | "defaultConsumerGroup" | 消费者组    |
-|  consumptionThreadCount   |  int  | 否    | 20                     | 消费线程数   |
-|  maxCacheMessageCount   |  int  | 否    | 1024                   | 最大缓存信息数 |
+| Attributes | Type | Required | Default | Description                                     |
+|----|----|----------|------------------------|-------------------------------------------------| 
+|  topic   |  String  | 否      | 无                      | topic名称（与topicPattern必须有一个有值，topicPattern优先级更高） |
+|  topicPattern   |  String  | 否      | 无                      | topic正则名称 （与topicPattern必须有一个有值，topicPattern优先级更高）                |
+|  tag   |  String  | 否        | ""                     | 标签                                              |
+|  consumerGroup   |  String  | 否    | "defaultConsumerGroup" | 消费者组                                            |
+|  consumptionThreadCount   |  int  | 否    | 20                     | 消费线程数                                           |
+|  maxCacheMessageCount   |  int  | 否    | 1024                   | 最大缓存信息数                                         |
