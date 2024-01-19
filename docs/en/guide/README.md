@@ -17,15 +17,20 @@ description: Guide
 
 - RocketMq 5.x
 - Kafka 3.x
-- Redis 6.x
+- Redis 5.x and above
 
-### 功能
+### Features
+* Available - ✅
+* In progress - 🚧
 
-| 中间件        | Send              | Listener  |
-|-----------|-------------------|-----------|
-| RocketMQ    | Normal message、Delay Message、Ordered Message | push      |
-| Kafka | Normal message              | poll      |
-| Redis      | publish           | subscribe |
+| Features                                       | Rocketmq-gRPC | Rocketmq-Remoting | Kafka | Redis |   
+|------------------------------------------------|:-------------:|:-----------------:|-------|-------| 
+| Send standard messages                         |       ✅       |        🚧         | ✅     | ✅     |    
+| Send async messages                            |       ✅       |        🚧         | ✅     | ✅     |    
+| Send timed/delay messages                      |       ✅       |        🚧         | 🚧    | 🚧    |    
+| Producer with transactional messages           |      🚧       |        🚧         | 🚧    | 🚧    |
+| 【Topic】 consumer with message listener         |       ✅       |        🚧         | ✅     | ✅     |    
+| 【Topic-Pattern】 consumer with message listener |      🚧       |        🚧         | ✅     | ✅     |    
 
 ## Code hosting
 
