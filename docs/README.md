@@ -4,6 +4,9 @@ home: true
 title: 首页
 #heroImage: /images/logo.png
 actions:
+  - text: 指南
+    link: /guide/index.html
+    type: primary
   - text: 快速开始
     link: /guide/getting-started.html
     type: primary

@@ -4,6 +4,9 @@ home: true
 title: Home
 #heroImage: /images/f.png
 actions:
+  - text: Guide
+    link: /guide/index.html
+    type: primary
   - text: Get Started
     link: /en/guide/getting-started.html
     type: primary

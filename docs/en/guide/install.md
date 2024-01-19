@@ -20,7 +20,7 @@ description:
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
 </dependency>
 ```
 
@@ -29,7 +29,7 @@ description:
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.6.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.7.0'
 ```
 
   </CodeGroupItem>
@@ -37,14 +37,15 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.6.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.6.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.7.0'
 ```
 
   </CodeGroupItem>
 </CodeGroup>
 
-### RocketMQ dependency installation
+### RocketMQ(gRPC) dependency installation
 
+> Support RocketMQ 5.X
 
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
@@ -53,7 +54,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-rocketmq</artifactId>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
 </dependency>
 ```
 
@@ -62,7 +63,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.6.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.7.0'
 ```
 
   </CodeGroupItem>
@@ -70,12 +71,45 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.6.1
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.6.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.7.0'
 ```
 
   </CodeGroupItem>
 </CodeGroup>
 
+### RocketMQ(Remoting) dependency installation
+
+> Support RocketMQ 4.X、5.X
+
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers
+<dependency>
+    <groupId>com.github.guoshiqiufeng</groupId>
+    <artifactId>loki-spring-boot-starter-rocketmq-remoting</artifactId>
+    <version>0.7.0</version>
+</dependency>
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq-remoting:0.7.0'
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq-remoting', version: '0.7.0'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ### Kafka dependency installation
 
@@ -87,7 +121,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-kafka</artifactId>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
 </dependency>
 ```
 
@@ -96,7 +130,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.6.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.7.0'
 ```
 
   </CodeGroupItem>
@@ -104,7 +138,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.6.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.6.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.7.0'
 ```
 
   </CodeGroupItem>
@@ -112,6 +146,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
 ### Redis dependency installation
 
+> Support Redis 5.X UP
 
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
@@ -120,7 +155,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-redis</artifactId>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
 </dependency>
 ```
 
@@ -129,7 +164,7 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
   <CodeGroupItem title="Gradle (Short)" active>
 
 ```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.6.1'
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.7.0'
 ```
 
   </CodeGroupItem>
@@ -137,7 +172,7 @@ implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.6.1'
   <CodeGroupItem title="Gradle">
 
 ```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.6.1'
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.7.0'
 ```
 
   </CodeGroupItem>

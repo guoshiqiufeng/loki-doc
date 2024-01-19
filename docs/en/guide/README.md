@@ -25,12 +25,14 @@ description: Guide
 
 | Features                                       | Rocketmq-gRPC | Rocketmq-Remoting | Kafka | Redis |   
 |------------------------------------------------|:-------------:|:-----------------:|-------|-------| 
-| Send standard messages                         |       ✅       |        🚧         | ✅     | ✅     |    
-| Send async messages                            |       ✅       |        🚧         | ✅     | ✅     |    
-| Send timed/delay messages                      |       ✅       |        🚧         | 🚧    | 🚧    |    
+| Send standard messages                         |       ✅       |        ✅         | ✅     | ✅     |    
+| Send async messages                            |       ✅       |        ✅         | ✅     | ✅     |    
+| Send timed/delay messages                      |       ✅       |        ✅         | 🚧    | 🚧    |    
 | Producer with transactional messages           |      🚧       |        🚧         | 🚧    | 🚧    |
-| 【Topic】 consumer with message listener         |       ✅       |        🚧         | ✅     | ✅     |    
+| 【Topic】 consumer with message listener         |       ✅       |        ✅         | ✅     | ✅     |    
 | 【Topic-Pattern】 consumer with message listener |      🚧       |        🚧         | ✅     | ✅     |    
+
+> Note: Rocketmq-Remoting `Send timed/delay messages` is only supported in `rocketmq 5.0` and above
 
 ## Code hosting
 
