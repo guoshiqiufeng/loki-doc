@@ -4,12 +4,12 @@ home: true
 title: 首页
 #heroImage: /images/logo.png
 actions:
-  - text: 指南
-    link: /guide/index.html
-    type: primary
   - text: 快速开始
     link: /guide/getting-started.html
     type: primary
+  - text: 项目简介
+    link: /guide/index.html
+    type: secondary
 features:
   - title: 简化开发
     details: 通过简化开发流程，提高开发效率。
