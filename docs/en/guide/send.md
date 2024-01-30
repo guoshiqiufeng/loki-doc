@@ -4,12 +4,13 @@ title: Send message
 description: 
 ---
 # Send message
-> All send message operations in loki are based on `BaseMapper`
+
+## Using the BaseMapper
 > The custom Mapper interface extends `BaseMapper`
 
-## Default method usage
+### Default method usage
 
-### Direct Messages
+#### Direct Messages
 
 Method Definition
 ```java
@@ -22,7 +23,7 @@ entity.setId("9521");
 entity.setMessage("test");
 String messageId = testMapper.send(entity);
 ```
-### Publish Messages Asynchronously
+#### Publish Messages Asynchronously
 Method Definition
 ```java
 CompletableFuture<String> sendAsync(T entity);
@@ -35,9 +36,9 @@ entity.setMessage("test");
 CompletableFuture<String> stringCompletableFuture = testMapper.sendAsync(entity);
 String messageId = stringCompletableFuture.get();
 ```
-## Using Custom Annotations
+### Using Custom Annotations
 
-### Direct Messages
+#### Direct Messages
 
 Mapper add method
 ```java
@@ -54,7 +55,7 @@ entity.setId("9521");
 entity.setMessage("test");
 testMapper.customSend(entity);
 ```
-### Publish Messages Asynchronously
+#### Publish Messages Asynchronously
 Mapper add method
 ```java
 @SendMessage(topic = "loki", tag = "custom", async = true, message = "#entity.message", messageKey = "#entity.id")
@@ -67,4 +68,90 @@ entity.setId("9521");
 entity.setMessage("test");
 CompletableFuture<String> stringCompletableFuture = testMapper.customAsyncSend(entity);
 String messageId = stringCompletableFuture.get();
+```
+
+## Working with LokiClient
+
+> Detailed usage examples can be found in [loki-test](https://github.com/guoshiqiufeng/loki-test) in `ClientController.java`
+
+Request Parameters
+
+| Parameter name    | Required |      Remarks       |   
+|-------------------|:--------:|:------------------:|
+| topic             |    Y     |       topic        |    
+| tag               |    N     |        tag         |    
+| message           |    Y     |  Message Content   |    
+| deliveryTimestamp |    N     | delivery timestamp |    
+| keys              |    N     |        key         |
+
+### Full dependency injection
+
+#### RocketMQ
+
+Dependency Injection
+
+```java
+@Resource
+private RocketClient rocketClient;
+```
+
+Use
+
+```java
+ProducerRecord record = new ProducerRecord();
+record.setTopic("loki");
+record.setMessage(IdUtil.getSnowflakeNextIdStr());
+ProducerResult result = rocketClient.sendAsync(record).get();
+```
+
+#### Kafka
+
+Dependency Injection
+
+```java
+@Resource
+private KafkaClient kafkaClient;
+```
+
+Use
+
+```java
+ProducerRecord record = new ProducerRecord();
+record.setTopic("loki");
+record.setMessage(IdUtil.getSnowflakeNextIdStr());
+ProducerResult result = kafkaClient.sendAsync(record).get();
+```
+
+#### Redis
+
+Dependency Injection
+
+```java
+@Resource
+private RedisClient redisClient;
+```
+
+Use
+
+```java
+ProducerRecord record = new ProducerRecord();
+record.setTopic("loki");
+record.setMessage(IdUtil.getSnowflakeNextIdStr());
+ProducerResult result = redisClient.sendAsync(record).get();
+```
+
+### 单依赖注入
+Dependency Injection
+```java
+@Resource
+private LokiClient lokiClient;
+```
+
+Use
+
+```java
+ProducerRecord record = new ProducerRecord();
+record.setTopic("loki");
+record.setMessage(IdUtil.getSnowflakeNextIdStr());
+ProducerResult result = lokiClient.sendAsync(record).get();
 ```
