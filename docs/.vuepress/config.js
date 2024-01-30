@@ -1,5 +1,6 @@
 import { defineUserConfig} from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
+import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'loki',
@@ -23,6 +24,7 @@ export default defineUserConfig({
         ['link', {rel: 'icon', href: '/loki-doc/images/f.ico'}],
         ['link', {rel: 'shortcut icon', href: '/loki-doc/images/f.ico'}]
     ],
+    bundler: viteBundler(),
     theme: defaultTheme({
         logo: "/images/logo.png",
         logoDark: "/images/logo-d.png",
