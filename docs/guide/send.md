@@ -128,6 +128,24 @@ record.setMessage(IdUtil.getSnowflakeNextIdStr());
 ProducerResult result = rocketClient.sendAsync(record).get();
 ```
 
+#### RocketMQ Remoting
+
+依赖注入
+
+```java
+@Resource
+private RocketRemotingClient rocketRemotingClient;
+```
+
+使用
+
+```java
+ProducerRecord record = new ProducerRecord();
+record.setTopic("loki");
+record.setMessage(IdUtil.getSnowflakeNextIdStr());
+ProducerResult result = rocketRemotingClient.sendAsync(record).get();
+```
+
 #### Kafka
 
 依赖注入
