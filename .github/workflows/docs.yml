@@ -23,7 +23,7 @@ jobs:
           # 选择要使用的 pnpm 版本
           version: 8
           # 使用 pnpm 安装依赖
-          run_install: true
+          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -32,7 +32,8 @@ jobs:
           node-version: 18
           # 缓存 pnpm 依赖
           cache: pnpm
-
+      - name: Install VuePress site
+        run: pnpm install
       # 运行构建脚本
       - name: Build VuePress site
         run: pnpm docs:build
