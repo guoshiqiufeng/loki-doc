@@ -31,11 +31,11 @@ jobs:
           # 使用 pnpm 安装依赖
           run_install: false
 
-      - name: Build VuePress site
-        run: |
-          ls -a
-          pnpm install
-          pnpm docs:build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build documentation site
+        run: pnpm docs:build
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
