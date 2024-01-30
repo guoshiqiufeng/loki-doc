@@ -19,7 +19,7 @@ description: Guide
 - Kafka 3.x
 - Redis 5.x and above
 
-### Features
+## Features
 * Available - ✅
 * In progress - 🚧
 

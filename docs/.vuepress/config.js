@@ -1,5 +1,5 @@
-import {defaultTheme, defineUserConfig} from 'vuepress'
-
+import { defineUserConfig} from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'loki',
@@ -40,14 +40,28 @@ export default defineUserConfig({
                     "/guide/": [
                         {
                             text: '指南',
+                            collapsible: true,
                             children: [
                                 '/guide/',
                                 '/guide/getting-started',
                                 '/guide/install',
                                 '/guide/config',
-                                '/guide/send',
-                                '/guide/listener',
                                 '/guide/annotation',
+                            ]
+                        }, {
+                            text: '发送消息',
+                            collapsible: true,
+                            children: [
+                                '/guide/send/',
+                                '/guide/send/mapper',
+                            ]
+                        }, {
+                            text: '接收消息',
+                            collapsible: true,
+                            children: [
+                                '/guide/listener/',
+                                '/guide/listener/auto',
+                                '/guide/listener/non-auto',
                             ]
                         }
                     ],
@@ -88,14 +102,30 @@ export default defineUserConfig({
                     "/en/guide/": [
                         {
                             text: 'Guide',
+                            collapsible: true,
                             children: [
                                 '/en/guide/',
                                 '/en/guide/getting-started',
                                 '/en/guide/install',
                                 '/en/guide/config',
-                                '/en/guide/send',
-                                '/en/guide/listener',
                                 '/en/guide/annotation',
+                            ]
+                        },
+                        {
+                            text: 'Send message',
+                            collapsible: true,
+                            children: [
+                                '/en/guide/send/',
+                                '/en/guide/send/mapper',
+                            ]
+                        },
+                        {
+                            text: 'Receive message',
+                            collapsible: true,
+                            children: [
+                                '/en/guide/listener/',
+                                '/en/guide/listener/auto',
+                                '/en/guide/listener/non-auto',
                             ]
                         }
                     ],
