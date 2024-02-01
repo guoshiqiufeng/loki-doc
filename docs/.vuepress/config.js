@@ -1,6 +1,9 @@
-import { defineUserConfig} from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { viteBundler } from '@vuepress/bundler-vite'
+import {defineUserConfig} from 'vuepress'
+import {defaultTheme} from '@vuepress/theme-default'
+import {viteBundler} from '@vuepress/bundler-vite'
+
+import {version} from '../../package.json'
+
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'loki',
@@ -134,8 +137,13 @@ export default defineUserConfig({
                     //     link: '/config/',
                     // },
                     {
-                        text: '更新日志',
-                        link: 'https://github.com/guoshiqiufeng/loki/releases',
+                        text: `v${version}`,
+                        children: [
+                            {
+                                text: '更新日志',
+                                link: 'https://github.com/guoshiqiufeng/loki/releases',
+                            }
+                        ]
                     }
                 ]
             },
@@ -242,8 +250,13 @@ export default defineUserConfig({
                     //     link: '/en/config/',
                     // },
                     {
-                        text: 'Changelog',
-                        link: 'https://github.com/guoshiqiufeng/loki/releases',
+                        text: `v${version}`,
+                        children: [
+                            {
+                                text: 'Changelog',
+                                link: 'https://github.com/guoshiqiufeng/loki/releases',
+                            }
+                        ]
                     }
                 ]
             },
