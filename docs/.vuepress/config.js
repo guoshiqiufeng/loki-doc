@@ -171,7 +171,7 @@ export default defineUserConfig({
                             text: 'Interceptor',
                             collapsible: true,
                             children: [
-                                '/en/guide/interceptor/',
+                                '/en/guide/interceptor/introduction',
                                 '/en/guide/interceptor/send',
                                 '/en/guide/interceptor/listener'
                             ]
@@ -191,32 +191,32 @@ export default defineUserConfig({
                         text: 'Guide',
                         // link: '/en/guide/',
                         children: [
-                            '/guide/introduction',
-                            '/guide/getting-started',
+                            '/en/guide/introduction',
+                            '/en/guide/getting-started',
                             '/en/guide/install',
                             '/en/guide/config',
                             '/en/guide/annotation',
                             {
                                 text: 'Send message',
                                 children: [
-                                    '/guide/send/introduction',
-                                    '/guide/send/mapper',
+                                    '/en/guide/send/introduction',
+                                    '/en/guide/send/mapper',
                                 ]
                             },
                             {
                                 text: 'Receive message',
                                 children: [
-                                    '/guide/listener/introduction',
-                                    '/guide/listener/auto',
-                                    '/guide/listener/non-auto',
+                                    '/en/guide/listener/introduction',
+                                    '/en/guide/listener/auto',
+                                    '/en/guide/listener/non-auto',
                                 ]
                             },
                             {
                                 text: 'Interceptor',
                                 children: [
-                                    '/guide/interceptor/introduction',
-                                    '/guide/interceptor/send',
-                                    '/guide/interceptor/listener'
+                                    '/en/guide/interceptor/introduction',
+                                    '/en/guide/interceptor/send',
+                                    '/en/guide/interceptor/listener'
                                 ]
                             }
                         ]
