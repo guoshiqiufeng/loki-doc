@@ -44,7 +44,7 @@ export default defineUserConfig({
                             text: '指南',
                             collapsible: true,
                             children: [
-                                '/guide/',
+                                '/guide/introduction',
                                 '/guide/getting-started',
                                 '/guide/install',
                                 '/guide/config',
@@ -54,16 +54,24 @@ export default defineUserConfig({
                             text: '发送消息',
                             collapsible: true,
                             children: [
-                                '/guide/send/',
+                                '/guide/send/introduction',
                                 '/guide/send/mapper',
                             ]
                         }, {
                             text: '接收消息',
                             collapsible: true,
                             children: [
-                                '/guide/listener/',
+                                '/guide/listener/introduction',
                                 '/guide/listener/auto',
                                 '/guide/listener/non-auto',
+                            ]
+                        }, {
+                            text: '拦截器',
+                            collapsible: true,
+                            children: [
+                                '/guide/interceptor/introduction',
+                                '/guide/interceptor/send',
+                                '/guide/interceptor/listener'
                             ]
                         }
                     ],
@@ -79,7 +87,37 @@ export default defineUserConfig({
                 navbar: [
                     {
                         text: '指南',
-                        link: '/guide/',
+                        //link: '/guide/',
+                        children: [
+                            '/guide/introduction',
+                            '/guide/getting-started',
+                            '/guide/install',
+                            '/guide/config',
+                            '/guide/annotation',
+                            {
+                                text: '发送消息',
+                                children: [
+                                    '/guide/send/introduction',
+                                    '/guide/send/mapper',
+                                ]
+                            },
+                            {
+                                text: '接收消息',
+                                children: [
+                                    '/guide/listener/introduction',
+                                    '/guide/listener/auto',
+                                    '/guide/listener/non-auto',
+                                ]
+                            },
+                            {
+                                text: '拦截器',
+                                children: [
+                                    '/guide/interceptor/introduction',
+                                    '/guide/interceptor/send',
+                                    '/guide/interceptor/listener'
+                                ]
+                            }
+                        ]
                     },
                     // {
                     //     text: '配置',
@@ -106,7 +144,7 @@ export default defineUserConfig({
                             text: 'Guide',
                             collapsible: true,
                             children: [
-                                '/en/guide/',
+                                '/en/guide/introduction',
                                 '/en/guide/getting-started',
                                 '/en/guide/install',
                                 '/en/guide/config',
@@ -117,7 +155,7 @@ export default defineUserConfig({
                             text: 'Send message',
                             collapsible: true,
                             children: [
-                                '/en/guide/send/',
+                                '/en/guide/send/introduction',
                                 '/en/guide/send/mapper',
                             ]
                         },
@@ -125,9 +163,17 @@ export default defineUserConfig({
                             text: 'Receive message',
                             collapsible: true,
                             children: [
-                                '/en/guide/listener/',
+                                '/en/guide/listener/introduction',
                                 '/en/guide/listener/auto',
                                 '/en/guide/listener/non-auto',
+                            ]
+                        }, {
+                            text: 'Interceptor',
+                            collapsible: true,
+                            children: [
+                                '/en/guide/interceptor/',
+                                '/en/guide/interceptor/send',
+                                '/en/guide/interceptor/listener'
                             ]
                         }
                     ],
@@ -143,7 +189,37 @@ export default defineUserConfig({
                 navbar: [
                     {
                         text: 'Guide',
-                        link: '/en/guide/',
+                        // link: '/en/guide/',
+                        children: [
+                            '/guide/introduction',
+                            '/guide/getting-started',
+                            '/en/guide/install',
+                            '/en/guide/config',
+                            '/en/guide/annotation',
+                            {
+                                text: 'Send message',
+                                children: [
+                                    '/guide/send/introduction',
+                                    '/guide/send/mapper',
+                                ]
+                            },
+                            {
+                                text: 'Receive message',
+                                children: [
+                                    '/guide/listener/introduction',
+                                    '/guide/listener/auto',
+                                    '/guide/listener/non-auto',
+                                ]
+                            },
+                            {
+                                text: 'Interceptor',
+                                children: [
+                                    '/guide/interceptor/introduction',
+                                    '/guide/interceptor/send',
+                                    '/guide/interceptor/listener'
+                                ]
+                            }
+                        ]
                     },
                     // {
                     //     text: 'Config',
