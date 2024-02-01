@@ -37,6 +37,16 @@ export default defineUserConfig({
                 editLinkText: '在 GitHub 上编辑此页',
                 lastUpdated: true,
                 lastUpdatedText: '上次更新',
+                tip: '提示',
+                warning: '注意',
+                danger: '警告',
+                // 404 page
+                notFound: [
+                    '这里什么都没有',
+                    '我们怎么到这来了？',
+                    '这是一个 404 页面',
+                    '看起来我们进入了错误的链接',
+                ],
                 contributors: false,
                 sidebar: {
                     "/guide/": [
@@ -138,6 +148,12 @@ export default defineUserConfig({
                 lastUpdated: true,
                 lastUpdatedText: 'Last Updated',
                 contributors: false,
+                notFound: [
+                    'There\'s nothing here',
+                    'How did we get here？',
+                    'This is a 404 page',
+                    'Looks like we ran into the wrong link',
+                ],
                 sidebar: {
                     "/en/guide/": [
                         {
