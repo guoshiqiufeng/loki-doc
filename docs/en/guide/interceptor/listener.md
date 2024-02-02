@@ -3,7 +3,7 @@ lang: en
 title: Intercept listening messages
 description: 
 ---
-
+# Intercept listening messages
 ## How to Use
 > Scanning instance with spring, Implementing `PipelineProcess` interface, specifying generics as `ConsumerRecordModel`.
 

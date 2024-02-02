@@ -4,6 +4,7 @@ title: 使用LokiClient
 description: 
 ---
 
+# 使用LokiClient
 > 详细使用实例可查看 [loki-test](https://github.com/guoshiqiufeng/loki-test) 下 `ClientController.java`
 
 请求参数

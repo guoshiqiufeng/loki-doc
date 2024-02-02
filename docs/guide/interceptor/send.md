@@ -3,7 +3,7 @@ lang: zh-CN
 title: 拦截发送消息
 description: 
 ---
-
+# 拦截发送消息
 
 ## 使用方式
 > 使用spring扫描实例, 实现`PipelineProcess`接口，指定泛型为`ProducerRecordModel`。

@@ -3,7 +3,7 @@ lang: en
 title: Intercept outgoing messages
 description: 
 ---
-
+# Intercept outgoing messages
 
 ## How to Use
 > Scanning instance with spring, Implementing `PipelineProcess` interface, specifying generics as `ProducerRecordModel`.

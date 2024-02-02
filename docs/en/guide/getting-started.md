@@ -3,6 +3,10 @@ lang: en
 title: Getting-started
 description: Getting-started
 ---
+<script setup>
+import {inject} from "vue";
+const version = inject('version');
+</script>
 # Getting-started
 Let's go through a simple demo to introduce how to use LOKI's features.
 
@@ -10,14 +14,36 @@ Let's go through a simple demo to introduce how to use LOKI's features.
 Create an empty Spring Boot project (2.x, 3.x are both supported) Here we are using version 3.2.0.
 
 ## Adding Dependencies
-Add the dependency in pom.xml:
-```xml
+
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers:no-v-pre
 <dependency>
-    <groupId>com.github.loki</groupId>
+    <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>starter-latest-version</version>
+    <version>{{version}}</version>
 </dependency>
 ```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:{{version}}'
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '{{version}}'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ## Configuration
 Add the configuration to application.yml:

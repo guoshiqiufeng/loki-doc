@@ -3,7 +3,7 @@ lang: en
 title: Working with LokiClient
 description: 
 ---
-
+# Working with LokiClient
 > Detailed usage examples can be found in [loki-test](https://github.com/guoshiqiufeng/loki-test) in `ClientController.java`
 
 Request Parameters
