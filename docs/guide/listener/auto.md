@@ -5,6 +5,7 @@ description:
 ---
 # 自动解码
 
+## 使用
 使用spring扫描实例，实现Listener接口，Listener接口所对应泛型上存在@MessageName注解。订阅信息位于@MessageName注解中。
 
 ```java
@@ -17,4 +18,6 @@ public class TestListener implements Listener<TestEntity> {
     }
 }
 ```
+
+
 

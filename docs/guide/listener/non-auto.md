@@ -6,7 +6,7 @@ description:
 # 非自动解码
 使用spring扫描实例，实现Listener接口, 添加@MessageListener注解。订阅信息位于@MessageListener注解中。
 
-## topic
+## 主题匹配
 
 ```java
 @Slf4j
@@ -20,7 +20,7 @@ public class TestMessageListener implements Listener<String> {
 }
 ```
 
-## topic-pattern
+## 主题正则匹配
 
 ```java
 @Slf4j
@@ -33,3 +33,6 @@ public class TestMessageListener implements Listener<String> {
     }
 }
 ```
+
+## @MessageListener
+[查看注解说明](../annotation.md#messagelistener)
