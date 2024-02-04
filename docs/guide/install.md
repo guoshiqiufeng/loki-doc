@@ -181,3 +181,35 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
   </CodeGroupItem>
 </CodeGroup>
+
+## Bom
+
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers:no-v-pre
+<dependencyManagement>
+   <dependencies>
+       <dependency>
+            <groupId>io.github.guoshiqiufeng</groupId>
+            <artifactId>loki-bom</artifactId>
+            <version>{{version}}</version>
+            <type>pom</type>
+            <scope>import</scope>
+       </dependency>
+   </dependencies>
+</dependencyManagement>
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers:no-v-pre
+dependencies {
+    implementation platform("io.github.guoshiqiufeng:loki-bom:{{version}}")
+}
+```
+
+  </CodeGroupItem>
+</CodeGroup>
