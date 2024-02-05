@@ -15,6 +15,8 @@ features:
     details: Improve development efficiency by streamlining the development process.
   - title: Standardize
     details: Adapt multiple MQ messages in one development.
+  #  - title: Further Enrich and Expand
+  #    details:  Based on the chain of responsibility mode, support rich extension.
   - title: Rapid Integration
     details: Fast integration based on Spring Boot.
 footer: Apache License 2.0 | Copyright © 2023-present fubluesky

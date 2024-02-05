@@ -34,7 +34,7 @@ export default defineUserConfig({
         locales: {
             '/': {
                 label: '简体中文',
-                selectText: '选择语言',
+                selectLanguageText: '选择语言',
                 selectLanguageName: '简体中文',
                 ariaLabel: '选择语言',
                 editLinkText: '在 GitHub 上编辑此页',
@@ -88,14 +88,14 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    // "/config/": [
-                    //     {
-                    //         text: '配置',
-                    //         children: [
-                    //             '/config/',
-                    //         ]
-                    //     }
-                    // ]
+                    "/config/": [
+                        {
+                            text: '配置',
+                            children: [
+                                '/config/introduction',
+                            ]
+                        }
+                    ]
                 },
                 navbar: [
                     {
@@ -132,10 +132,10 @@ export default defineUserConfig({
                             }
                         ]
                     },
-                    // {
-                    //     text: '配置',
-                    //     link: '/config/',
-                    // },
+                    {
+                        text: '配置',
+                        link: '/config/introduction',
+                    },
                     {
                         text: `v${version}`,
                         children: [
@@ -144,12 +144,13 @@ export default defineUserConfig({
                                 link: 'https://github.com/guoshiqiufeng/loki/releases',
                             }
                         ]
-                    }
+                    },
+                    '/support/introduction'
                 ]
             },
             '/en/': {
                 label: 'English',
-                selectText: 'Languages',
+                selectLanguageText: 'Languages',
                 selectLanguageName: 'English',
                 ariaLabel: 'Select language',
                 editLinkText: 'Edit this page on GitHub',
@@ -201,14 +202,14 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    // "/en/config/": [
-                    //     {
-                    //         text: 'Config',
-                    //         children: [
-                    //             '/en/config/',
-                    //         ]
-                    //     }
-                    // ],
+                    "/en/config/": [
+                        {
+                            text: 'Config',
+                            children: [
+                                '/en/config/introduction',
+                            ]
+                        }
+                    ],
                 },
                 navbar: [
                     {
@@ -245,10 +246,10 @@ export default defineUserConfig({
                             }
                         ]
                     },
-                    // {
-                    //     text: 'Config',
-                    //     link: '/en/config/',
-                    // },
+                    {
+                        text: 'Config',
+                        link: '/en/config/introduction',
+                    },
                     {
                         text: `v${version}`,
                         children: [
@@ -257,7 +258,8 @@ export default defineUserConfig({
                                 link: 'https://github.com/guoshiqiufeng/loki/releases',
                             }
                         ]
-                    }
+                    },
+                    '/en/support/introduction'
                 ]
             },
         },
