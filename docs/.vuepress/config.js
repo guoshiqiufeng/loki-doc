@@ -88,14 +88,14 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    // "/config/": [
-                    //     {
-                    //         text: '配置',
-                    //         children: [
-                    //             '/config/',
-                    //         ]
-                    //     }
-                    // ]
+                    "/config/": [
+                        {
+                            text: '配置',
+                            children: [
+                                '/config/introduction',
+                            ]
+                        }
+                    ]
                 },
                 navbar: [
                     {
@@ -132,10 +132,10 @@ export default defineUserConfig({
                             }
                         ]
                     },
-                    // {
-                    //     text: '配置',
-                    //     link: '/config/',
-                    // },
+                    {
+                        text: '配置',
+                        link: '/config/introduction',
+                    },
                     {
                         text: `v${version}`,
                         children: [
@@ -202,14 +202,14 @@ export default defineUserConfig({
                             ]
                         }
                     ],
-                    // "/en/config/": [
-                    //     {
-                    //         text: 'Config',
-                    //         children: [
-                    //             '/en/config/',
-                    //         ]
-                    //     }
-                    // ],
+                    "/en/config/": [
+                        {
+                            text: 'Config',
+                            children: [
+                                '/en/config/introduction',
+                            ]
+                        }
+                    ],
                 },
                 navbar: [
                     {
@@ -246,10 +246,10 @@ export default defineUserConfig({
                             }
                         ]
                     },
-                    // {
-                    //     text: 'Config',
-                    //     link: '/en/config/',
-                    // },
+                    {
+                        text: 'Config',
+                        link: '/en/config/introduction',
+                    },
                     {
                         text: `v${version}`,
                         children: [
@@ -259,7 +259,7 @@ export default defineUserConfig({
                             }
                         ]
                     },
-                    '/support/introduction'
+                    '/en/support/introduction'
                 ]
             },
         },

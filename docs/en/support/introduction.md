@@ -1,6 +1,6 @@
 ---
 lang: en
-title: support
+title: Support
 ---
 
 # Support the project
