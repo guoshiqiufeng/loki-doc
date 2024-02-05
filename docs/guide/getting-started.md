@@ -3,6 +3,10 @@ lang: zh-cn
 title: 快速开始
 description: 
 ---
+<script setup>
+import {inject} from "vue";
+const version = inject('version');
+</script>
 # 快速开始
 
 我们通过一个简单的Demo来介绍如何使用 [LOKI](https://github.com/guoshiqiufeng/loki) 的功能。
@@ -11,14 +15,36 @@ description:
 创建一个空的Spring Boot 工程（2.x、3.x 都支持）这里我们使用 3.2.0 版本。
 
 ## 添加依赖
-在 pom.xml 中添加依赖：
-```xml
+
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers:no-v-pre
 <dependency>
-    <groupId>com.github.loki</groupId>
+    <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>starter-latest-version</version>
+    <version>{{version}}</version>
 </dependency>
 ```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle (Short)" active>
+
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:{{version}}'
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '{{version}}'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ## 配置
 在 application.yml 中添加配置：

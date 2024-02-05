@@ -4,6 +4,8 @@ title: 使用BaseMapper
 description: 
 ---
 
+# 使用BaseMapper
+
 > 自定义Mapper接口继承`BaseMapper`
 
 ## 使用默认方法

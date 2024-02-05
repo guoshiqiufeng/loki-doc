@@ -3,7 +3,9 @@ lang: en
 title: Auto decoding
 description: 
 ---
+# Auto decoding
 
+## Use
 Use spring scan instances to implement the Listener interface, and the generic type corresponding to the Listener interface has @MessageName annotation. The subscription information is located in the @MessageName annotation.
 
 ```java

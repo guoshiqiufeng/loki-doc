@@ -3,7 +3,7 @@ lang: en
 title: Using the BaseMapper
 description: 
 ---
-
+# Using the BaseMapper
 > The custom Mapper interface extends `BaseMapper`
 
 ## Default method usage

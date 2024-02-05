@@ -1,6 +1,6 @@
 {
   "name": "loki-doc",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "loki doc",
   "main": "index.js",
   "scripts": {
@@ -15,13 +15,14 @@
     "loki"
   ],
   "author": "guoshiqiufeng",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/guoshiqiufeng/loki-doc/issues"
   },
   "homepage": "https://github.com/guoshiqiufeng/loki-doc#readme",
   "devDependencies": {
     "@vuepress/client": "^2.0.0-rc.0",
+    "@vuepress/plugin-docsearch": "^2.0.0-rc.3",
     "vue": "^3.3.8",
     "vuepress": "^2.0.0-rc.0"
   },

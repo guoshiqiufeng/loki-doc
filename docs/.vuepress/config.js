@@ -1,6 +1,9 @@
-import { defineUserConfig} from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { viteBundler } from '@vuepress/bundler-vite'
+import {defineUserConfig} from 'vuepress'
+import {defaultTheme} from '@vuepress/theme-default'
+import {viteBundler} from '@vuepress/bundler-vite'
+
+import {version} from '../../package.json'
+
 export default defineUserConfig({
     lang: 'zh-CN',
     title: 'loki',
@@ -37,6 +40,16 @@ export default defineUserConfig({
                 editLinkText: '在 GitHub 上编辑此页',
                 lastUpdated: true,
                 lastUpdatedText: '上次更新',
+                tip: '提示',
+                warning: '注意',
+                danger: '警告',
+                // 404 page
+                notFound: [
+                    '这里什么都没有',
+                    '我们怎么到这来了？',
+                    '这是一个 404 页面',
+                    '看起来我们进入了错误的链接',
+                ],
                 contributors: false,
                 sidebar: {
                     "/guide/": [
@@ -44,7 +57,7 @@ export default defineUserConfig({
                             text: '指南',
                             collapsible: true,
                             children: [
-                                '/guide/',
+                                '/guide/introduction',
                                 '/guide/getting-started',
                                 '/guide/install',
                                 '/guide/config',
@@ -54,16 +67,24 @@ export default defineUserConfig({
                             text: '发送消息',
                             collapsible: true,
                             children: [
-                                '/guide/send/',
+                                '/guide/send/introduction',
                                 '/guide/send/mapper',
                             ]
                         }, {
                             text: '接收消息',
                             collapsible: true,
                             children: [
-                                '/guide/listener/',
+                                '/guide/listener/introduction',
                                 '/guide/listener/auto',
                                 '/guide/listener/non-auto',
+                            ]
+                        }, {
+                            text: '拦截器',
+                            collapsible: true,
+                            children: [
+                                '/guide/interceptor/introduction',
+                                '/guide/interceptor/send',
+                                '/guide/interceptor/listener'
                             ]
                         }
                     ],
@@ -79,15 +100,50 @@ export default defineUserConfig({
                 navbar: [
                     {
                         text: '指南',
-                        link: '/guide/',
+                        //link: '/guide/',
+                        children: [
+                            '/guide/introduction',
+                            '/guide/getting-started',
+                            '/guide/install',
+                            '/guide/config',
+                            '/guide/annotation',
+                            {
+                                text: '发送消息',
+                                children: [
+                                    '/guide/send/introduction',
+                                    '/guide/send/mapper',
+                                ]
+                            },
+                            {
+                                text: '接收消息',
+                                children: [
+                                    '/guide/listener/introduction',
+                                    '/guide/listener/auto',
+                                    '/guide/listener/non-auto',
+                                ]
+                            },
+                            {
+                                text: '拦截器',
+                                children: [
+                                    '/guide/interceptor/introduction',
+                                    '/guide/interceptor/send',
+                                    '/guide/interceptor/listener'
+                                ]
+                            }
+                        ]
                     },
                     // {
                     //     text: '配置',
                     //     link: '/config/',
                     // },
                     {
-                        text: '更新日志',
-                        link: 'https://github.com/guoshiqiufeng/loki/releases',
+                        text: `v${version}`,
+                        children: [
+                            {
+                                text: '更新日志',
+                                link: 'https://github.com/guoshiqiufeng/loki/releases',
+                            }
+                        ]
                     }
                 ]
             },
@@ -100,13 +156,19 @@ export default defineUserConfig({
                 lastUpdated: true,
                 lastUpdatedText: 'Last Updated',
                 contributors: false,
+                notFound: [
+                    'There\'s nothing here',
+                    'How did we get here？',
+                    'This is a 404 page',
+                    'Looks like we ran into the wrong link',
+                ],
                 sidebar: {
                     "/en/guide/": [
                         {
                             text: 'Guide',
                             collapsible: true,
                             children: [
-                                '/en/guide/',
+                                '/en/guide/introduction',
                                 '/en/guide/getting-started',
                                 '/en/guide/install',
                                 '/en/guide/config',
@@ -117,7 +179,7 @@ export default defineUserConfig({
                             text: 'Send message',
                             collapsible: true,
                             children: [
-                                '/en/guide/send/',
+                                '/en/guide/send/introduction',
                                 '/en/guide/send/mapper',
                             ]
                         },
@@ -125,9 +187,17 @@ export default defineUserConfig({
                             text: 'Receive message',
                             collapsible: true,
                             children: [
-                                '/en/guide/listener/',
+                                '/en/guide/listener/introduction',
                                 '/en/guide/listener/auto',
                                 '/en/guide/listener/non-auto',
+                            ]
+                        }, {
+                            text: 'Interceptor',
+                            collapsible: true,
+                            children: [
+                                '/en/guide/interceptor/introduction',
+                                '/en/guide/interceptor/send',
+                                '/en/guide/interceptor/listener'
                             ]
                         }
                     ],
@@ -143,15 +213,50 @@ export default defineUserConfig({
                 navbar: [
                     {
                         text: 'Guide',
-                        link: '/en/guide/',
+                        // link: '/en/guide/',
+                        children: [
+                            '/en/guide/introduction',
+                            '/en/guide/getting-started',
+                            '/en/guide/install',
+                            '/en/guide/config',
+                            '/en/guide/annotation',
+                            {
+                                text: 'Send message',
+                                children: [
+                                    '/en/guide/send/introduction',
+                                    '/en/guide/send/mapper',
+                                ]
+                            },
+                            {
+                                text: 'Receive message',
+                                children: [
+                                    '/en/guide/listener/introduction',
+                                    '/en/guide/listener/auto',
+                                    '/en/guide/listener/non-auto',
+                                ]
+                            },
+                            {
+                                text: 'Interceptor',
+                                children: [
+                                    '/en/guide/interceptor/introduction',
+                                    '/en/guide/interceptor/send',
+                                    '/en/guide/interceptor/listener'
+                                ]
+                            }
+                        ]
                     },
                     // {
                     //     text: 'Config',
                     //     link: '/en/config/',
                     // },
                     {
-                        text: 'Changelog',
-                        link: 'https://github.com/guoshiqiufeng/loki/releases',
+                        text: `v${version}`,
+                        children: [
+                            {
+                                text: 'Changelog',
+                                link: 'https://github.com/guoshiqiufeng/loki/releases',
+                            }
+                        ]
                     }
                 ]
             },

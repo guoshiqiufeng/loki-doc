@@ -3,7 +3,7 @@ lang: en
 title: Non-auto decoding
 description: 
 ---
-
+# Non-auto decoding
 Spring scan sample, implement the Listener interface, add @MessageListener annotations. The subscription information is in the @MessageListener annotation.
 
 ## topic
@@ -33,3 +33,6 @@ public class TestMessageListener implements Listener<String> {
     }
 }
 ```
+
+## @MessageListener
+[Refer to annotation for explanation](../annotation.md#messagelistener)

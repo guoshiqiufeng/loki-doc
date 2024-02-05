@@ -3,6 +3,10 @@ lang: zh-CN
 title: 安装
 description: 
 ---
+<script setup>
+import {inject} from "vue";
+const version = inject('version');
+</script>
 # 安装
 
 [LOKI](https://github.com/guoshiqiufeng/loki) 基于JDK8, 支持SpringBoot 2.x, 3.x.
@@ -16,11 +20,11 @@ description:
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
 
-```xml:no-line-numbers
+```xml:no-line-numbers:no-v-pre
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter</artifactId>
-    <version>0.8.1</version>
+    <version>{{version}}</version>
 </dependency>
 ```
 
@@ -28,16 +32,16 @@ description:
 
   <CodeGroupItem title="Gradle (Short)" active>
 
-```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter:{{version}}'
 ```
 
   </CodeGroupItem>
 
   <CodeGroupItem title="Gradle">
 
-```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter', version: '{{version}}'
 ```
 
   </CodeGroupItem>
@@ -50,11 +54,11 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
 
-```xml:no-line-numbers
+```xml:no-line-numbers:no-v-pre
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-rocketmq</artifactId>
-    <version>0.8.1</version>
+    <version>{{version}}</version>
 </dependency>
 ```
 
@@ -62,16 +66,16 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
   <CodeGroupItem title="Gradle (Short)" active>
 
-```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq:{{version}}'
 ```
 
   </CodeGroupItem>
 
   <CodeGroupItem title="Gradle">
 
-```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq', version: '{{version}}'
 ```
 
   </CodeGroupItem>
@@ -84,11 +88,11 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
 
-```xml:no-line-numbers
+```xml:no-line-numbers:no-v-pre
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-rocketmq-remoting</artifactId>
-    <version>0.8.1</version>
+    <version>{{version}}</version>
 </dependency>
 ```
 
@@ -96,16 +100,16 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
   <CodeGroupItem title="Gradle (Short)" active>
 
-```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq-remoting:0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-rocketmq-remoting:{{version}}'
 ```
 
   </CodeGroupItem>
 
   <CodeGroupItem title="Gradle">
 
-```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq-remoting', version: '0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-rocketmq-remoting', version: '{{version}}'
 ```
 
   </CodeGroupItem>
@@ -117,11 +121,11 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
 
-```xml:no-line-numbers
+```xml:no-line-numbers:no-v-pre
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-kafka</artifactId>
-    <version>0.8.1</version>
+    <version>{{version}}</version>
 </dependency>
 ```
 
@@ -129,16 +133,16 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
   <CodeGroupItem title="Gradle (Short)" active>
 
-```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-kafka:{{version}}'
 ```
 
   </CodeGroupItem>
 
   <CodeGroupItem title="Gradle">
 
-```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-kafka', version: '{{version}}'
 ```
 
   </CodeGroupItem>
@@ -151,11 +155,11 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 <CodeGroup>
   <CodeGroupItem title="Maven" active>
 
-```xml:no-line-numbers
+```xml:no-line-numbers:no-v-pre
 <dependency>
     <groupId>com.github.guoshiqiufeng</groupId>
     <artifactId>loki-spring-boot-starter-redis</artifactId>
-    <version>0.8.1</version>
+    <version>{{version}}</version>
 </dependency>
 ```
 
@@ -163,16 +167,48 @@ implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starte
 
   <CodeGroupItem title="Gradle (Short)" active>
 
-```groovy:no-line-numbers
-implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation 'com.github.guoshiqiufeng:loki-spring-boot-starter-redis:{{version}}'
 ```
 
   </CodeGroupItem>
 
   <CodeGroupItem title="Gradle">
 
-```groovy:no-line-numbers
-implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '0.8.1'
+```groovy:no-line-numbers:no-v-pre
+implementation group: 'com.github.guoshiqiufeng', name: 'loki-spring-boot-starter-redis', version: '{{version}}'
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
+## Bom
+
+<CodeGroup>
+  <CodeGroupItem title="Maven" active>
+
+```xml:no-line-numbers:no-v-pre
+<dependencyManagement>
+   <dependencies>
+       <dependency>
+            <groupId>io.github.guoshiqiufeng</groupId>
+            <artifactId>loki-bom</artifactId>
+            <version>{{version}}</version>
+            <type>pom</type>
+            <scope>import</scope>
+       </dependency>
+   </dependencies>
+</dependencyManagement>
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Gradle">
+
+```groovy:no-line-numbers:no-v-pre
+dependencies {
+    implementation platform("io.github.guoshiqiufeng:loki-bom:{{version}}")
+}
 ```
 
   </CodeGroupItem>

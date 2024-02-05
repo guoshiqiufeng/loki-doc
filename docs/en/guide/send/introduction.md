@@ -1,33 +1,33 @@
 ---
-lang: zh-CN
-title: 使用LokiClient
+lang: en
+title: Working with LokiClient
 description: 
 ---
+# Working with LokiClient
+> Detailed usage examples can be found in [loki-test](https://github.com/guoshiqiufeng/loki-test) in `ClientController.java`
 
-> 详细使用实例可查看 [loki-test](https://github.com/guoshiqiufeng/loki-test) 下 `ClientController.java`
+Request Parameters
 
-请求参数
+| Parameter name    | Required |      Remarks       |   
+|-------------------|:--------:|:------------------:|
+| topic             |    Y     |       topic        |    
+| tag               |    N     |        tag         |    
+| message           |    Y     |  Message Content   |    
+| deliveryTimestamp |    N     | delivery timestamp |    
+| keys              |    N     |        key         |
 
-| 参数名               | 是否必填 |  备注  |   
-|-------------------|:----:|:----:|
-| topic             |  是   |  主题  |    
-| tag               |  否   |  标签  |    
-| message           |  是   | 消息内容 |    
-| deliveryTimestamp |  否   | 延迟时间 |    
-| keys              |  否   | key  |
-
-## 全依赖注入
+## Full dependency injection
 
 ### RocketMQ
 
-依赖注入
+Dependency Injection
 
 ```java
 @Resource
 private RocketClient rocketClient;
 ```
 
-使用
+Use
 
 ```java
 ProducerRecord record = new ProducerRecord();
@@ -38,14 +38,14 @@ ProducerResult result = rocketClient.sendAsync(record).get();
 
 ### RocketMQ Remoting
 
-依赖注入
+Dependency Injection
 
 ```java
 @Resource
 private RocketRemotingClient rocketRemotingClient;
 ```
 
-使用
+Use
 
 ```java
 ProducerRecord record = new ProducerRecord();
@@ -54,16 +54,17 @@ record.setMessage(IdUtil.getSnowflakeNextIdStr());
 ProducerResult result = rocketRemotingClient.sendAsync(record).get();
 ```
 
+
 ### Kafka
 
-依赖注入
+Dependency Injection
 
 ```java
 @Resource
 private KafkaClient kafkaClient;
 ```
 
-使用
+Use
 
 ```java
 ProducerRecord record = new ProducerRecord();
@@ -74,14 +75,14 @@ ProducerResult result = kafkaClient.sendAsync(record).get();
 
 ### Redis
 
-依赖注入
+Dependency Injection
 
 ```java
 @Resource
 private RedisClient redisClient;
 ```
 
-使用
+Use
 
 ```java
 ProducerRecord record = new ProducerRecord();
@@ -90,14 +91,14 @@ record.setMessage(IdUtil.getSnowflakeNextIdStr());
 ProducerResult result = redisClient.sendAsync(record).get();
 ```
 
-## 单依赖注入
-依赖注入
+## Single dependency injection
+Dependency Injection
 ```java
 @Resource
 private LokiClient lokiClient;
 ```
 
-使用
+Use
 
 ```java
 ProducerRecord record = new ProducerRecord();

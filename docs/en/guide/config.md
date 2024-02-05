@@ -105,7 +105,9 @@ public class LokiTestApplication {
 
 ### `application.yml` Configure `mq` connection parameters
 > Support Redis Standalone, Cluster, and Sentinel modes
+> 
 > Support all configurations under `spring.data.redis`
+> 
 > The configuration under mq-config will overwrite the configuration under `spring.data.redis`
 
 <CodeGroup>

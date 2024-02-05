@@ -104,7 +104,9 @@ public class LokiTestApplication {
 
 ### `application.yml` 配置 `mq` 连接参数
 > 支持redis单机版、集群、哨兵模式
+> 
 > 支持`spring.data.redis`下的所有配置
+>
 > mq-config 下的配置会覆盖`spring.data.redis`下配置
 
 <CodeGroup>
