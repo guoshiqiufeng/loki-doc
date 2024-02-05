@@ -34,7 +34,7 @@ export default defineUserConfig({
         locales: {
             '/': {
                 label: '简体中文',
-                selectText: '选择语言',
+                selectLanguageText: '选择语言',
                 selectLanguageName: '简体中文',
                 ariaLabel: '选择语言',
                 editLinkText: '在 GitHub 上编辑此页',
@@ -144,12 +144,13 @@ export default defineUserConfig({
                                 link: 'https://github.com/guoshiqiufeng/loki/releases',
                             }
                         ]
-                    }
+                    },
+                    '/support/introduction'
                 ]
             },
             '/en/': {
                 label: 'English',
-                selectText: 'Languages',
+                selectLanguageText: 'Languages',
                 selectLanguageName: 'English',
                 ariaLabel: 'Select language',
                 editLinkText: 'Edit this page on GitHub',
@@ -257,7 +258,8 @@ export default defineUserConfig({
                                 link: 'https://github.com/guoshiqiufeng/loki/releases',
                             }
                         ]
-                    }
+                    },
+                    '/support/introduction'
                 ]
             },
         },

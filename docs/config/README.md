@@ -1,5 +1,5 @@
 ---
-lang: en
+lang: zh-CN
 title: 配置
 description: config
 ---

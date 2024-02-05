@@ -15,6 +15,8 @@ features:
     details: 通过简化开发流程，提高开发效率。
   - title: 统一规范
     details: 一次开发适配多种MQ消息。
+#  - title: 丰富拓展
+#    details:  基于责任链模式，支持丰富拓展。
   - title: 快速集成
     details: 基于Spring Boot 快速集成。
 footer: Apache License 2.0 | Copyright © 2023-present fubluesky
