@@ -16,7 +16,7 @@ description:
 ## 支持的MQ消息中间件
 
 - RocketMq 5.x
-- Kafka 3.x
+- Kafka 2.x 以上
 - Redis 5.x 以上
 
 ## 功能

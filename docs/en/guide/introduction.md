@@ -16,7 +16,7 @@ description: Guide
 ## Supported MQ Message Middleware
 
 - RocketMq 5.x
-- Kafka 3.x
+- Kafka 2.x and above
 - Redis 5.x and above
 
 ## Features
