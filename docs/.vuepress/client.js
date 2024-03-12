@@ -1,5 +1,5 @@
 import {provide} from "vue"
-import {defineClientConfig} from "@vuepress/client";
+import {defineClientConfig} from "vuepress/client";
 import {version} from '../../package.json'
 export default defineClientConfig({
     setup() {
