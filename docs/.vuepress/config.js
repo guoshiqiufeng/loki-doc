@@ -1,7 +1,7 @@
 import {defineUserConfig} from 'vuepress'
 import {defaultTheme} from '@vuepress/theme-default'
 import {viteBundler} from '@vuepress/bundler-vite'
-
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import {version} from '../../package.json'
 
 export default defineUserConfig({
@@ -264,5 +264,30 @@ export default defineUserConfig({
             },
         },
         repo: "https://github.com/guoshiqiufeng/loki"
-    })
+    }),
+    plugins: [
+        docsearchPlugin({
+            appId: '7GF1BLRJXF',
+            apiKey: '3ebb7928ef71b488c5e9fc84597d3c63',
+            indexName: 'loki',
+            locales: {
+                '/en/': {
+                    placeholder: 'Search Documentation',
+                    translations: {
+                        button: {
+                            buttonText: 'Search Documentation',
+                        },
+                    },
+                },
+                '/': {
+                    placeholder: '搜索文档',
+                    translations: {
+                        button: {
+                            buttonText: '搜索文档',
+                        },
+                    },
+                },
+            },
+        }),
+    ]
 })
