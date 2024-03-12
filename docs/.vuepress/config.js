@@ -265,29 +265,29 @@ export default defineUserConfig({
         },
         repo: "https://github.com/guoshiqiufeng/loki"
     }),
-    // plugins: [
-    //     docsearchPlugin({
-    //         appId: '7GF1BLRJXF',
-    //         apiKey: '3ebb7928ef71b488c5e9fc84597d3c63',
-    //         indexName: 'loki',
-    //         locales: {
-    //             '/en/': {
-    //                 placeholder: 'Search Documentation',
-    //                 translations: {
-    //                     button: {
-    //                         buttonText: 'Search Documentation',
-    //                     },
-    //                 },
-    //             },
-    //             '/': {
-    //                 placeholder: '搜索文档',
-    //                 translations: {
-    //                     button: {
-    //                         buttonText: '搜索文档',
-    //                     },
-    //                 },
-    //             },
-    //         },
-    //     }),
-    // ]
+    plugins: [
+        docsearchPlugin({
+            appId: '7GF1BLRJXF',
+            apiKey: '3ebb7928ef71b488c5e9fc84597d3c63',
+            indexName: 'loki',
+            locales: {
+                '/en/': {
+                    placeholder: 'Search Documentation',
+                    translations: {
+                        button: {
+                            buttonText: 'Search Documentation',
+                        },
+                    },
+                },
+                '/': {
+                    placeholder: '搜索文档',
+                    translations: {
+                        button: {
+                            buttonText: '搜索文档',
+                        },
+                    },
+                },
+            },
+        }),
+    ]
 })
