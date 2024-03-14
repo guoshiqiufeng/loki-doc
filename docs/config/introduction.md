@@ -28,6 +28,18 @@ loki:
 
 > 控制统一的链接配置，spring boot 启动会初始化默认配置，具体请查看 [MqConfig](#mqconfig-1)。
 
+#### redisHistoryDelayMessageSend
+
+- 类型：`boolean`
+- 默认值：`false`
+> 是否开启 redis 历史延迟消息发送（已过期未处理的延时消息，系统启动重新发送），默认未开启
+
+#### redisHistoryDelayMessageSendTime
+
+- 类型：`long`
+- 默认值：`2000`
+> redis 历史延迟消息 发送延时时间，单位毫秒，默认2000毫秒
+
 ### MqConfig
 
 #### mqType

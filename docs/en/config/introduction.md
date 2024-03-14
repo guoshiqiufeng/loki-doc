@@ -29,6 +29,18 @@ loki:
 > Control link unified configuration, initializing default configuration when spring boot starts, please refer to the
 > details [MqConfig](#mqconfig-1)。
 
+#### redisHistoryDelayMessageSend
+
+- Type: `boolean`
+- Default：`false`
+> Whether to enable the sending of delayed messages in Redis (resending expired undelivered delayed messages when the system starts), not enabled by default.
+
+#### redisHistoryDelayMessageSendTime
+
+- Type: `long`
+- Default: `2000`
+> Redis historical delayed message sends a delay time in milliseconds, defaulting to 2000 milliseconds.
+
 ### MqConfig
 
 #### mqType
