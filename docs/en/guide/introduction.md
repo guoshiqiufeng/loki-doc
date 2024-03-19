@@ -27,15 +27,17 @@ description: Guide
 |------------------------------------------------|:-------------:|:-----------------:|-------|-------| 
 | 【BaseMapper】Send standard messages             |       ✅       |         ✅         | ✅     | ✅     |    
 | 【BaseMapper】Send async messages                |       ✅       |         ✅         | ✅     | ✅     |    
-| 【BaseMapper】Send timed/delay messages          |       ✅       |        ✅         | 🚧    | 🚧    |    
+| 【BaseMapper】Send timed/delay messages          |       ✅       |        ✅         | 🚧    | ✅    |    
 | 【LokiClient】Send standard messages             |       ✅       |         ✅         | ✅     | ✅     |    
 | 【LokiClient】Send async messages                |       ✅       |         ✅         | ✅     | ✅     |    
-| 【LokiClient】Send timed/delay messages          |       ✅       |        ✅         | 🚧    | 🚧    | 
+| 【LokiClient】Send timed/delay messages          |       ✅       |        ✅         | 🚧    | ✅    | 
 | Producer with transactional messages           |      🚧       |        🚧         | 🚧    | 🚧    |
 | 【Topic】 consumer with message listener         |       ✅       |        ✅         | ✅     | ✅     |    
 | 【Topic-Pattern】 consumer with message listener |      🚧       |        🚧         | ✅     | ✅     |    
 
-> Note: Rocketmq-Remoting `Send timed/delay messages` is only supported in `rocketmq 5.0` and above
+Note:
+- Rocketmq-Remoting `Send timed/delay messages` is only supported in `rocketmq 5.0` and above
+- Redis `Send timed/delay messages` requires Redis to enable `notify-keyspace-events Ex` notification.
 
 ## Code hosting
 
