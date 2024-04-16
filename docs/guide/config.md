@@ -179,5 +179,23 @@ loki:
   </CodeGroupItem>
 </CodeGroup>
 
+### 可选客户端
+
+默认使用`jedis`客户端，v1.2.0以上版本，当引入`spring-data-redis`后默认使用`spring-data-redis`，可通过配置参数指定客户端。
+
+- jedis默认实现
+```yaml:no-line-numbers
+loki:
+  redis:
+    support-type: default
+```
+- spring-data 实现
+```yaml:no-line-numbers
+loki:
+  redis:
+    support-type: spring-data
+```
+
+
 通常来说，一般的简单工程，通过以上配置即可正常使用 [LOKI](https://github.com/guoshiqiufeng/loki)，具体可参考以下项目：
 [loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-redis-test)。

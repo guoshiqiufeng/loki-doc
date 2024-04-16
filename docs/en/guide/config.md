@@ -180,6 +180,25 @@ loki:
   </CodeGroupItem>
 </CodeGroup>
 
+
+### Optional Clients
+
+The `jedis` client is used by default, v1.2.0 or above, `spring-data-redis` is used by default when `spring-data-redis` is introduced, and the client can be specified via configuration parameters.
+
+- jedis default implementation
+```yaml:no-line-numbers
+loki:
+  redis:
+    support-type: default
+```
+- spring-data implementation
+```yaml:no-line-numbers
+loki:
+  redis:
+    support-type: spring-data
+```
+
+
 Generally speaking, a general simple project can be used normally with the above
 configuration [LOKI](https://github.com/guoshiqiufeng/loki), please refer to the following project:
 [loki-test](https://github.com/guoshiqiufeng/loki-test/tree/master/loki-kafka-test)。
